@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "nativescript.nativescript",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss"
+  ]
+}

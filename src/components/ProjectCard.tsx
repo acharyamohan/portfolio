@@ -26,7 +26,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
         <div className="flex space-x-4">
           {project.githubUrl && (
-            <a href={project.githubUrl} 
+            <a href={"https://github.com/professortate/cropYieldPrediction.git"} 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-gray-600 hover:text-blue-600">

@@ -1,0 +1,34 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+    <ActionBar title="SecureVPN" class="action-bar" />
+    
+    <GridLayout rows="auto, *, auto">
+        <StackLayout row="0" class="p-4 bg-blue-50">
+            <Label text="Select VPN Location" class="text-xl font-bold mb-2" />
+            <Label text="{{ vpnService.connectionStatus }}" class="text-sm" 
+                   color="{{ isConnected ? 'green' : 'gray' }}" />
+        </StackLayout>
+        
+        <ListView row="1" items="{{ servers }}" class="list-group" separatorColor="#eee">
+            <ListView.itemTemplate>
+                <GridLayout columns="*, auto" class="p-4 bg-white">
+                    <StackLayout col="0">
+                        <Label text="{{ name }}" class="text-lg font-semibold" />
+                        <Label text="{{ location }}" class="text-sm text-gray-500" />
+                        <Label text="{{ protocol === 'udp' ? 'UDP' : 'TCP' }}" class="text-xs text-blue-500" />
+                    </StackLayout>
+                    <Button col="1" 
+                            text="{{ $parent.isConnected ? 'Disconnect' : 'Connect' }}"
+                            tap="{{ $parent.isConnected ? $parent.disconnect : $parent.connectToServer }}"
+                            class="{{ $parent.isConnected ? 'bg-red-500' : 'bg-green-500' }} text-white p-2 rounded" />
+                </GridLayout>
+            </ListView.itemTemplate>
+        </ListView>
+
+        <StackLayout row="2" class="p-4 bg-gray-100" visibility="{{ isConnected ? 'visible' : 'collapsed' }}">
+            <Label text="Connected to:" class="text-lg" />
+            <Label text="{{ currentServer.name }}" class="font-bold" />
+            <Label text="{{ currentServer.location }}" class="text-gray-500" />
+            <Label text="{{ 'IP: ' + currentServer.ip }}" class="text-xs text-gray-600" />
+        </StackLayout>
+    </GridLayout>
+</Page>

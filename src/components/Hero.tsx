@@ -7,10 +7,10 @@ export function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Data Science Portfolio
+          Mohan Acharya
           </h1>
           <p className="text-xl md:text-2xl mb-12 text-blue-100">
-            Aspiring Data Scientist | Python Developer | Machine Learning Enthusiast
+            | Data Is the New Gold; I’m Perfecting the Art of Mining It | 
           </p>
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
             <a href="#projects" 
