@@ -1,12 +1,29 @@
-import { Skill } from '../types/project';
+export interface SkillCategory {
+  category: string;
+  skills: string[];
 
-export const skills: Skill[] = [
-  { name: 'Python', level: 80, category: 'Programming' },
-  { name: 'SQL', level: 70, category: 'Programming' },
-  { name: 'Pandas', level: 75, category: 'Data Analysis' },
-  { name: 'NumPy', level: 70, category: 'Data Analysis' },
-  { name: 'Matplotlib', level: 65, category: 'Data Analysis' },
-  { name: 'Scikit-learn', level: 60, category: 'Machine Learning' },
-  { name: 'Jupyter Notebook', level: 85, category: 'Tools' },
-  { name: 'Git', level: 65, category: 'Tools' }
+
+}
+
+export const skills: SkillCategory[] = [
+    {
+    category: 'MATHEMATICS',
+    skills: ['Linear Algebra', 'Multiple Variables', 'Probability' ,'RBasic Optimization Techniques', 'Introduction to Estimation Theory'],
+  },
+  {
+    category: 'Programming',
+    skills: ['Python', 'SQL', 'MATLAB' ,'R', 'Scala'],
+  },
+  {
+    category: 'Data Analysis',
+    skills: ['Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'LibROSA', 'OpenCv', 'Exploratory Data Analysis (EDA)'],
+  },
+  {
+    category: 'Machine Learning',
+    skills: ['Scikit-learn','NLP'],
+  },
+  {
+    category: 'Tools',
+    skills: ['Jupyter Notebook', 'Git', 'Streamlit', 'Microsoft Excel'],
+  },
 ];

@@ -10,31 +10,14 @@ export function Skills() {
           <p className="mt-4 text-lg text-gray-600">Technologies and tools I work with</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {Object.values(skills.reduce((acc, skill) => {
-            if (!acc[skill.category]) {
-              acc[skill.category] = [];
-            }
-            acc[skill.category].push(skill);
-            return acc;
-          }, {} as Record<string, typeof skills>)).map((categorySkills, index) => (
+          {skills.map((group, index) => (
             <div key={index} className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-4">{categorySkills[0].category}</h3>
-              <div className="space-y-4">
-                {categorySkills.map((skill) => (
-                  <div key={skill.name}>
-                    <div className="flex justify-between mb-1">
-                      <span className="text-gray-700">{skill.name}</span>
-                      <span className="text-gray-600">{skill.level}%</span>
-                    </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2">
-                      <div
-                        className="bg-blue-600 rounded-full h-2"
-                        style={{ width: `${skill.level}%` }}
-                      />
-                    </div>
-                  </div>
+              <h3 className="text-xl font-semibold mb-4">{group.category}</h3>
+              <ul className="space-y-2 text-gray-700 list-disc list-inside">
+                {group.skills.map((skill) => (
+                  <li key={skill}>{skill}</li>
                 ))}
-              </div>
+              </ul>
             </div>
           ))}
         </div>

@@ -14,23 +14,23 @@ export function Contact() {
             className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <Mail className="h-8 w-8 text-blue-600 mb-2" />
             <span className="text-gray-900 font-medium">Email</span>
-            <span className="text-gray-600">professortate3@gmail.com</span>
+            <span className="text-gray-600">acharyamooohan@gmail.com</span>
           </a>
-          <a href="https://github.com/professortate"
+          <a href="https://github.com/acharyamohan"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <Github className="h-8 w-8 text-blue-600 mb-2" />
             <span className="text-gray-900 font-medium">GitHub</span>
-            <span className="text-gray-600">@professortate</span>
+            <span className="text-gray-600">@acharyamohan</span>
           </a>
-          <a href="https://linkedin.com/in/professortate"
+          <a href="https://www.linkedin.com/in/mooohanacharya"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <Linkedin className="h-8 w-8 text-blue-600 mb-2" />
             <span className="text-gray-900 font-medium">LinkedIn</span>
-            <span className="text-gray-600">@professortate</span>
+            <span className="text-gray-600">@mooohanacharya</span>
           </a>
         </div>
       </div>
