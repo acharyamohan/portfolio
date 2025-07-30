@@ -38,7 +38,7 @@ export const projects: Project[] = [
   imageUrl:
     'https://github.com/acharyamohan/Movie_Management_System/blob/main/Movie_store_ER.png?raw=true',
   tags: ['Python', 'SQLite', 'Tkinter', 'CRUD', 'GUI'],
-  githubUrl: 'https://github.com/acharyamohan/Movie_Management_System.git',
+  githubUrl: 'https://github.com/professortate/cropYieldPrediction.git',
 }
 
 ];
