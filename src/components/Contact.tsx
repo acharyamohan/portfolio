@@ -24,13 +24,13 @@ export function Contact() {
             <span className="text-gray-900 font-medium">GitHub</span>
             <span className="text-gray-600">@acharyamohan</span>
           </a>
-          <a href="https://www.linkedin.com/in/mooohanacharya"
+          <a href="https://www.linkedin.com/in/acharyamohan"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <Linkedin className="h-8 w-8 text-blue-600 mb-2" />
             <span className="text-gray-900 font-medium">LinkedIn</span>
-            <span className="text-gray-600">@mooohanacharya</span>
+            <span className="text-gray-600">@acharyamohan</span>
           </a>
         </div>
       </div>
