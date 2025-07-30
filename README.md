@@ -16,3 +16,6 @@ This portfolio showcases my skills, projects, and tools I use in my data journey
 - Lucide Icons
 - React Router
 
+## Deploy again after changes
+npm run build
+npm run deploy
